@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Digital Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #EFF6F5; /* Snowy Teal */
+      color: #1F2F2E; /* Deep Slate */
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #C4DAD6; /* Dusty Teal-Grey */
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #1F2F2E;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: #88BDBC; /* Hover Teal */
+    }
+
+    header {
+      background-color: #C4DAD6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid #1F2F2E;
+      margin-bottom: 20px;
+    }
+
+    header .intro {
+      max-width: 600px;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      color: #1F2F2E;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background-color: #D1E7E4; /* Muted Teal */
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #1F2F2E;
+      margin-bottom: 10px;
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skill, .project {
+      flex: 1 1 200px;
+      background: #EFF6F5; /* Light Contrast */
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .skill img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .project img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .view-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 14px;
+      background-color: #88BDBC; /* Hover Teal */
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .view-link:hover {
+      background-color: #1F2F2E; /* Deep Slate */
+    }
+
+    .personal-info ul,
+    .goals ul,
+    .contact-info ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .personal-info li,
+    .certifications li,
+    .contact-info li {
+      background: #EFF6F5;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #C4DAD6;
+      color: #1F2F2E;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 30px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#Certifications">Certification</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <a href="https://ibb.co/mrRkXxvz"><img src="https://i.ibb.co/mrRkXxvz/img.jpg" alt="img" border="0"></a>
+    <div class="intro">
+      <h1>Hello, I'm Janhavi Chalak</h1>
+      <p>Web Developer | Circuit Designer </p>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a first year Electronic and Telecommunication engineering student. Currently pursuing BTech degree in MITAOE, Alandi.</p>
+    </section>
+
+    <!-- Personal Info -->
+    <section class="personal-info">
+      <h2>Personal Information</h2>
+      <ul>
+        <li><strong>Name:</strong> Janhavi Chalak</li>
+        <li><strong>Current Degree:</strong> B.Tech in Electronics and Telecommunication</li>
+        <li><strong>College:</strong> MIT Academy of Engineering (MITAOE), Alandi</li>
+        <li><strong>10th:</strong> Sterling School, Bhosari – 87%</li>
+        <li><strong>12th:</strong> Vishwakalyan Jr. College – 74%</li>
+        <li><strong>Interests:</strong> Web Development, Electronics, Exploring New Tech</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <p>HTML</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <p>CSS</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Language">
+          <p>C language</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          <p>GitHub</p>
+        </div>
+        <div class="skill">
+          <img src="kicad-logo.jpg" alt="KiCad">
+          <p>Kicad</p>
+        </div>
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+          <p>Python (Basics)</p>
+        </div>
+        <div class="skill">
+          <img src="multisim.jpg" alt="Multisim">
+          <p>Multisim</p>
+        </div>
+        <div class="skill">
+          <img src="Tinkercad.jpg" alt="Tinkercad">
+          <p>Tinkercad</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          
+          <p>Clap switch with PCB layout</p>
+          <a href="https://drive.google.com/drive/folders/1ptnsSaQ41qpOPUWeEPKE0-xU6-Fd5PCq" target="_blank" class="view-link">View Project</a>
+        </div>
+        <div class="project">
+          
+          <p>Website for store management system</p>
+          <a href="https://sites.google.com/u/0/d/1mr2deYyLi_Jy5cRchrX6I-WTsXPc2n5G/preview" target="_blank" class="view-link">View Project</a>
+        </div>
+        <div class="project">
+         
+          <p>Auto rain shield for clothes (using Arduino, sensors)</p>
+          <a href="https://drive.google.com/drive/folders/1Uc1WTho63PIibcJ67qCQRJxPI1cm1WJj" target="_blank" class="view-link">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="Certifications" class="Certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li><a href="https://drive.google.com/file/d/1YvDa2AcXBRIrV6IMn1Th0CCL7m5RPmQ3/view?usp=drivesdk" target="_blank">Essentials of Python-1 certificate</a></li>
+        <li><a href="https://drive.google.com/file/d/1YvDa2AcXBRIrV6IMn1Th0CCL7m5RPmQ3/view?usp=drivesdk" target="_blank">Essentials of Python-2 certificate</a></li>
+        <li><a href="https://drive.google.com/file/d/1Xvcs3vu6xhjb3WQiCUe4sXuW9Awle_gI/view?usp=drivesdk" target="_blank">Futureskills certificate</a></li>
+
+        
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-info">
+      <h2>Contact Information</h2>
+      <ul>
+        <li>Contact no: 9699481029</li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/janhavi-chalak-80a733360/
+          " target="_blank">Janhavi Chalak</a></li>
+				<li>Email: <a href="mailto:janhavichalak@gmail.com">janhavichalak@gmail.com</a></li>
+        
+
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Janhavi Chalak </p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
